@@ -1,0 +1,1 @@
+require "#{Rails.root}/lib/hrivna_humanizer.rb"
