@@ -1,0 +1,11 @@
+ <input type="text" name="sum" id="sum"/>
+ <div id="res"></div>
+
+<script>
+   $('input#sum').keyup(function() {
+      var self = $(this);
+      delay(function(){
+        $.get("", { sum: self.val() })
+      }, 700 );
+    });
+ </script>
