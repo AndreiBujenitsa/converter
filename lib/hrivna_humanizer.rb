@@ -13,7 +13,7 @@ class HrivnaHumanizer
     end
 
     def to_str(sum)
-      return "зфвелика сумма" if sum>999999999
+      return "завелика сумма" if sum>999999999
       res = words(sum)
       res = res.gsub(/\bодна мільйон\b/, 'один мільйон').gsub(/\bдві мільйони\b/, 'два мільйони') if sum >= 10**6
       res += HRIVNA[last_digit(sum)] unless res.blank?
